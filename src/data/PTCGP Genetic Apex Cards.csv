@@ -1,0 +1,311 @@
+Number,Name,Deck
+001,Bulbasaur,Mewtwo
+002,Ivysaur,Mewtwo
+003,Venusaur,Mewtwo
+004,Venusaur ex,Mewtwo
+005,Caterpie,Pikachu
+006,Metapod,Pikachu
+007,Butterfree,Pikachu
+008,Weedle,Mewtwo
+009,Kakuna,Mewtwo
+010,Beedril,Mewtwo
+011,Oddish,Charizard
+012,Gloom,Charizard
+013,Vileplume,Charizard
+014,Paras,Pikachu
+015,Parasect,Pikachu
+016,Venonat,Mewtwo
+017,Venomoth,Mewtwo
+018,Bellsprout,Charizard
+019,Weepinbell,Charizard
+020,Victreebel,Charizard
+021,Exeggcute,Charizard
+022,Exeggcutor,Charizard
+023,Exeggcutor ex,Charizard
+024,Tangela,Charizard
+025,Scyther,Mewtwo
+031,Skiddo,Charizard
+032,Gogoat,Charizard
+033,Charmander,Charizard
+034,Charmeleon,Charizard
+035,Charizard,Charizard
+036,Charizard ex,Charizard
+037,Vulpix,Charizard
+038,Ninetales,Charizard
+039,Growlithe,Pikachu
+040,Arcanine,Pikachu
+041,Arcanine ex,Pikachu
+044,Magmar,Charizard
+045,Flareon,Charizard
+046,Moltres,Charizard
+047,Moltres ex,Charizard
+049,Salandit,Mewtwo
+050,Salazzle,Mewtwo
+053,Squirtle,Pikachu
+054,Wartortle,Pikachu
+055,Blastoise,Pikachu
+056,Blastoise ex,Pikachu
+059,Poliwag,Charizard
+060,Poliwhirl,Charizard
+061,Poliwrath,Charizard
+062,Tentacool,Mewtwo
+063,Tentacruel,Mewtwo
+064,Seel,Pikachu
+065,Dewgong,Pikachu
+066,Shellder,Mewtwo
+067,Cloyster,Mewtwo
+068,Krabby,Mewtwo
+069,Kingler,Mewtwo
+070,Horsea,Pikachu
+071,Seadra,Pikachu
+072,Goldeen,Pikachu
+073,Seaking,Pikachu
+074,Staryu,Charizard
+075,Starmie,Charizard
+076,Starmie ex,Charizard
+077,Magikarp,Pikachu
+078,Gyarados,Pikachu
+079,Lapras,Charizard
+080,Vaporeon,Mewtwo
+081,Omanyte,Pikachu
+082,Omastar,Pikachu
+083,Articuno,Mewtwo
+084,Articuno ex,Mewtwo
+085,Ducklett,Charizard
+086,Swanna,Charizard
+087,Froakie,Charizard
+088,Frogadier,Charizard
+089,Greninja,Charizard
+090,Pyukumuku,Charizard
+094,Pikachu,Pikachu
+095,Raichu,Pikachu
+096,Pikachu ex,Pikachu
+097,Magnemite,Pikachu
+098,Magneton,Pikachu
+099,Voltorb,Pikachu
+100,Electrode,Pikachu
+101,Electabuzz,Pikachu
+102,Jolteon,Pikachu
+103,Zapdos,Pikachu
+104,Zapdos ex,Pikachu
+107,Tynamo,Mewtwo
+108,Eelektrik,Mewtwo
+109,Eelektross,Mewtwo
+113,Clefairy,Pikachu
+114,Clefable,Pikachu
+115,Abra,Charizard
+116,Kadabra,Charizard
+117,Alakazam,Charizard
+120,Gastly,Mewtwo
+121,Haunter,Mewtwo
+122,Gengar,Mewtwo
+123,Gengar ex,Mewtwo
+124,Drowzee,Pikachu
+125,Hypno,Pikachu
+126,Mr. Mime,Mewtwo
+127,Jynx,Mewtwo
+128,Mewtwo,Mewtwo
+129,Mewtwo ex,Mewtwo
+130,Ralts,Mewtwo
+131,Kirlia,Mewtwo
+132,Gardevoir,Mewtwo
+139,Diglett,Pikachu
+140,Dugtrio,Pikachu
+141,Mankey,Charizard
+142,Primeape,Charizard
+143,Machop,Charizard
+144,Machoke,Charizard
+145,Machamp,Charizard
+146,Machamp ex,Charizard
+147,Geodude,Pikachu
+148,Graveler,Pikachu
+149,Golem,Pikachu
+150,Onix,Pikachu
+151,Cubone,Mewtwo
+152,Marowak,Mewtwo
+153,Marowak ex,Mewtwo
+154,Hitmonlee,Mewtwo
+155,Hitmonchan,Charizard
+156,Rhyhorn,Mewtwo
+157,Rhydon,Mewtwo
+158,Kabuto,Charizard
+159,Kabutops,Charizard
+160,Mienfoo,Pikachu
+161,Mienshao,Pikachu
+166,NidoranF,Pikachu
+167,Nidorina,Pikachu
+168,Nidoqueen,Pikachu
+169,NidoranM,Pikachu
+170,Nidorino,Pikachu
+171,Nidoking,Pikachu
+172,Zubat,Mewtwo
+173,Golbat,Mewtwo
+174,Grimer,Mewtwo
+175,Muk,Mewtwo
+176,Koffing,Mewtwo
+177,Weezing,Mewtwo
+178,Mawile,Charizard
+181,Meltan,Charizard
+182,Melmetal,Charizard
+183,Dratini,Mewtwo
+184,Dragonair,Mewtwo
+185,Dragonite,Mewtwo
+186,Pidgey,Mewtwo
+187,Pidgeotto,Mewtwo
+188,Pidgeot,Mewtwo
+191,Spearow,Charizard
+192,Fearow,Charizard
+193,Jigglypuff,Pikachu
+194,Wigglytuff,Pikachu
+195,Wigglytuff ex,Pikachu
+196,Meowth,Charizard
+197,Persian,Charizard
+201,Lickitung,Mewtwo
+202,Chansey,Pikachu
+203,Kangaskhan,Charizard
+204,Tauros,Charizard
+205,Ditto,Mewtwo
+206,Eevee,Charizard
+207,Eevee,Mewtwo
+208,Eevee,Pikachu
+209,Porygon,Mewtwo
+210,Aerodactyl,Mewtwo
+211,Snorlax,Pikachu
+216,Helix Fossil,Pikachu
+217,Dome Fossil,Charizard
+218,Old Amber,Mewtwo
+219,Erika,Charizard
+220,Misty,Pikachu
+221,Blaine,Charizard
+222,Koga,Mewtwo
+223,Giovanni,Mewtwo
+224,Brock,Pikachu
+225,Sabrina,Charizard
+226,Lt. Surge,Pikachu
+227,Bulbasaur I,Mewtwo
+228,Gloom I,Charizard
+229,Pinsir I,Charizard
+230,Charmander I,Charizard
+231,Rapidash I,Charizard
+232,Squirtle I,Pikachu
+233,Gyarados I,Pikachu
+234,Lapras I,Charizard
+235,Electrode I,Pikachu
+236,Alakazam I,Charizard
+237,Slowpoke I,Charizard
+238,Diglett I,Pikachu
+239,Cubone I,Mewtwo
+240,Nidoqueen I,Pikachu
+241,Nidoking I,Pikachu
+242,Golbat I,Mewtwo
+243,Weezing I,Mewtwo
+244,Dragonite I,Mewtwo
+245,Pidgeot I,Mewtwo
+246,Meowth I,Charizard
+247,Ditto I,Mewtwo
+248,Eevee I,Pikachu
+249,Porygon I,Mewtwo
+250,Snorlax I,Pikachu
+251,Venusaur ex FA,Mewtwo
+252,Exeggcutor ex FA,Charizard
+253,Charizard ex FA,Charizard
+254,Arcanine ex FA,Pikachu
+255,Moltres ex FA,Charizard
+256,Blastoise ex FA,Pikachu
+257,Starmie ex FA,Charizard
+258,Articuno ex FA,Mewtwo
+259,Pikachu ex FA,Pikachu
+260,Zapdos ex FA,Pikachu
+261,Gengar ex FA,Mewtwo
+262,Mewtwo ex FA,Mewtwo
+263,Machamp ex FA,Charizard
+264,Marowak ex FA,Mewtwo
+265,Wigglytuff ex FA,Pikachu
+266,Erika FA,Charizard
+267,Misty FA,Pikachu
+268,Blaine FA,Charizard
+269,Koga FA,Mewtwo
+270,Giovanni FA,Mewtwo
+271,Brock FA,Pikachu
+272,Sabrina FA,Charizard
+273,Lt. Surge FA,Pikachu
+274,Moltres ex R,Charizard
+275,Articuno ex R,Mewtwo
+276,Zapdos ex R,Pikachu
+277,Gengar ex R,Mewtwo
+278,Machamp ex R,Charizard
+279,Wigglytuff ex R,Pikachu
+280,Charizard ex IA,Charizard
+281,Pikachu ex IA,Pikachu
+282,Mewtwo ex IA,Mewtwo
+026,Pinsir,"Mewtwo, Pikachu, Charizard"
+027,Cottonee,"Mewtwo, Pikachu, Charizard"
+028,Whimsicott,"Mewtwo, Pikachu, Charizard"
+029,Petilil,"Mewtwo, Pikachu, Charizard"
+030,Lilligant,"Mewtwo, Pikachu, Charizard"
+042,Ponyta,"Mewtwo, Pikachu, Charizard"
+043,Rapidash,"Mewtwo, Pikachu, Charizard"
+048,Heatmor,"Mewtwo, Pikachu, Charizard"
+051,Sizzlipede,"Mewtwo, Pikachu, Charizard"
+052,Centiskorch,"Mewtwo, Pikachu, Charizard"
+057,Psyduck,"Mewtwo, Pikachu, Charizard"
+058,Golduck,"Mewtwo, Pikachu, Charizard"
+091,Bruxish,"Mewtwo, Pikachu, Charizard"
+092,Snom,"Mewtwo, Pikachu, Charizard"
+093,Frosmoth,"Mewtwo, Pikachu, Charizard"
+105,Blitzle,"Mewtwo, Pikachu, Charizard"
+106,Zebstrika,"Mewtwo, Pikachu, Charizard"
+110,Helioptile,"Mewtwo, Pikachu, Charizard"
+111,Heliolisk,"Mewtwo, Pikachu, Charizard"
+112,Pincurchin,"Mewtwo, Pikachu, Charizard"
+118,Slowpoke,"Mewtwo, Pikachu, Charizard"
+119,Slowbro,"Mewtwo, Pikachu, Charizard"
+133,Woobat,"Mewtwo, Pikachu, Charizard"
+134,Swoobat,"Mewtwo, Pikachu, Charizard"
+135,Golett,"Mewtwo, Pikachu, Charizard"
+136,Golurk,"Mewtwo, Pikachu, Charizard"
+137,Sandshrew,"Mewtwo, Pikachu, Charizard"
+138,Sandslash,"Mewtwo, Pikachu, Charizard"
+162,Clobbopus,"Mewtwo, Pikachu, Charizard"
+163,Grapploct,"Mewtwo, Pikachu, Charizard"
+164,Ekans,"Mewtwo, Pikachu, Charizard"
+165,Arbok,"Mewtwo, Pikachu, Charizard"
+179,Pawniard,"Mewtwo, Pikachu, Charizard"
+180,Bisharp,"Mewtwo, Pikachu, Charizard"
+189,Rattata,"Mewtwo, Pikachu, Charizard"
+190,Raticate,"Mewtwo, Pikachu, Charizard"
+198,Farfetch'd,"Mewtwo, Pikachu, Charizard"
+199,Doduo,"Mewtwo, Pikachu, Charizard"
+200,Dodrio,"Mewtwo, Pikachu, Charizard"
+212,Minccino,"Mewtwo, Pikachu, Charizard"
+213,Cinccino,"Mewtwo, Pikachu, Charizard"
+214,Wooloo,"Mewtwo, Pikachu, Charizard"
+215,Dubwool,"Mewtwo, Pikachu, Charizard"
+284,Charizard ex CG,"Mewtwo, Pikachu, Charizard"
+285,Pikachu ex CG,"Mewtwo, Pikachu, Charizard"
+286,Mewtwo ex CG,"Mewtwo, Pikachu, Charizard"
+001,Potion,Promo A
+002,X Speed,Promo A
+003,Hand Scope,Promo A
+004,Pokédex,Promo A
+005,Poké Ball,Promo A
+006,Red Card,Promo A
+007,Professor's Research,Promo A
+008,???,Promo A
+009,Pikachu,Promo A
+010,Mewtwo,Promo A
+011,Chansey,Promo A
+012,Meowth,Promo A
+013,Butterfree,Promo A
+014,Lapras ex,Promo A
+015,Pikachu,Promo A
+016,Clefairy,Promo A
+017,Mankey,Promo A
+018,Venusaur,Promo A
+019,Greninja,Promo A
+020,Haunter,Promo A
+021,Onix,Promo A
+022,Jigglypuff,Promo A
+023,Bulbasaur,Promo A
+024,Magnemite,Promo A
+283,Mew IA,
