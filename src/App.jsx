@@ -4,6 +4,17 @@ import { useLocalStorage } from '@uidotdev/usehooks'
 import { Badge } from "./Badge"
 import { cn } from "./utils"
 import { MinusCircle } from "lucide-react"
+import { Layout } from "./Layout"
+
+const CHARIZARD = 'CHARIZARD'
+const PIKACHU = 'PIKACHU'
+const MEWTWO = 'MEWTWO'
+const PROMO_A = 'PROMO_A'
+
+const NUM_CARDS_IN_CHARIZARD_DECK = cards.filter(c => c.Deck.toUpperCase() === CHARIZARD).length 
+const NUM_CARDS_IN_PIKACHU_DECK = cards.filter(c => c.Deck.toUpperCase() === PIKACHU).length
+const NUM_CARDS_IN_MEWTWO_DECK = cards.filter(c => c.Deck.toUpperCase() === MEWTWO).length
+const NUM_CARDS_IN_PROMO_A_DECK = cards.filter(c => c.Deck.toUpperCase() === PROMO_A).length
 
 export const App = () => {
 
@@ -40,10 +51,14 @@ export const App = () => {
   const cardIsInDeck = (card, deck) => deck.filter(c => c.Number === card.Number && c.Name === card.Name).length !== 0
 
   return (
-    <div className="w-screen min-w-screen h-screen min-h-screen flex justify-content-center bg-neutral-100 text-black dark:bg-neutral-900 dark:text-white">
-
+    <Layout>
       <div className="flex w-full max-w-[600px] flex-col px-5 py-5">
-        <h1 className={`${hasResults ? 'text-2xl' : 'text-4xl'} text-center ${hasResults ? 'mb-5' : 'mb-3'} transition-all`}>
+        <h1 className={cn([
+          'text-5xl', 'mb-8',
+          'text-center',
+          'transition-all',
+          'font-bold'
+        ])}>
           <label htmlFor="card-search-field">Search Pokemon TCGP Cards</label>
         </h1>
 
@@ -51,50 +66,57 @@ export const App = () => {
           id="card-search-field" 
           type="text" 
           placeholder="Search by name, number, or card deck. Try: pikachu" 
-          className="w-full text-lg ps-3 h-16 border rounded dark:bg-slate-950 dark:text-white" 
+          className="w-full text-lg ps-3 h-16 border rounded dark:bg-zinc-950 dark:text-white" 
           onChange={e => setSearch(e.target.value)} 
         />
 
-        {hasResults && <div className={cn(['dark:bg-neutral-950 border'])}>
+        {hasResults && <div className={cn(['dark:bg-zinc-950 border', 'overflow-y-auto'])}>
 
-          <div className="flex border-b pb-2 text-xs font-bold uppercase p-5">
+          <div className="flex border-b pb-2 text-xs font-bold uppercase p-5 sticky top-0 dark:bg-zinc-950 bg-zinc-100">
             <div className="w-24">Number</div>
             <div className="w-52">Name</div>
             <div className="w-40">Deck</div>
             <div className="flex-1">Owned</div>
           </div>
-
-          {results.map((r, i) => (
-            <div className="flex p-5 dark:hover:bg-neutral-900 hover:bg-neutral-200" key={`r${i}`}>
-              <div className="w-24">{r.Number}</div>
-              <div className="w-52">{r.Name}</div>
-              <div className="w-40 flex flex-col space-y-1">{r.Deck.split(',').map((c, i) => <Badge key={`${c}-${i}`} label={c} />)}</div>
-              <div className="flex-1">
-                <input
-                  type="checkbox"
-                  className="w-6 h-6 cursor-pointer"
-                  checked={cardIsInDeck(r, userCards)}
-                  onChange={e => e.target.checked ? addCardToCollection(r) : removeCardFromCollection(r)}
-                />
+    
+            {results.map((r, i) => (
+              <div className="flex p-5 dark:hover:bg-zinc-900 hover:bg-zinc-200" key={`r${i}`}>
+                <div className="w-24">{r.Number}</div>
+                <div className="w-52">{r.Name}</div>
+                <div className="w-40 flex flex-col space-y-1">{r.Deck.split(',').map((c, i) => <Badge key={`${c}-${i}`} label={c} />)}</div>
+                <div className="flex-1">
+                  <input
+                    type="checkbox"
+                    className="w-6 h-6 cursor-pointer"
+                    checked={cardIsInDeck(r, userCards)}
+                    onChange={e => e.target.checked ? addCardToCollection(r) : removeCardFromCollection(r)}
+                  />
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+
         </div>}
       </div>
 
-      <div className="w-96 p-3 bg-red-400 text-white dark:bg-neutral-950 flex-1">
+      <div className="w-96 p-3 bg-red-400 text-white dark:bg-zinc-950 flex-1 overflow-y-auto">
         <h2 className="text-2xl mb-2 font-bold">My Deck</h2>
-        {userCards.length === 0 && <div>No cards collected yet!</div>}
+        {userCards.length === 0  ? <div>No cards collected yet!</div> : <div className={cn(['border', 'dark:border-zinc-600', 'p-2', 'rounded-md', 'flex', 'flex-col'])}>
+          <div>Charizard: {userCards.filter(c => c.Deck.toUpperCase() === CHARIZARD).length} / {NUM_CARDS_IN_CHARIZARD_DECK}</div>
+          <div>Mewtwo: {userCards.filter(c => c.Deck.toUpperCase() === MEWTWO).length} / {NUM_CARDS_IN_MEWTWO_DECK}</div>
+          <div>Pikachu: {userCards.filter(c => c.Deck.toUpperCase() === PIKACHU).length} / {NUM_CARDS_IN_PIKACHU_DECK}</div>
+        </div>}
         {userCards.map((c, i) => (
           <div key={`uc${i}`} className={cn([
             'w-full', 'inline-flex', 'justify-between', 'py-1', 'px-1', 
-            cardPendingDeletion && cardPendingDeletion === c.Number && 'dark:bg-red-400 dark:text-white rounded-md'
+            cardPendingDeletion && cardPendingDeletion === c.Number && 'dark:bg-red-400 dark:text-black rounded-md font-bold'
           ])}>
 
             <span className="w-10">{c.Number}</span>
             <span className='flex-1'>{c.Name}</span>
             <button 
-              className={cn(['dark:hover:text-black'])}
+              className={cn([
+                cardPendingDeletion && cardPendingDeletion === c.Number ? 'dark:text-black text-white' : 'text-black dark:text-white'
+              ])}
               onMouseEnter={() => setCardPendingDeletion(c.Number)} 
               onMouseLeave={() => setCardPendingDeletion(false)} 
               onClick={() => removeCardFromCollection(c)}>
@@ -104,7 +126,7 @@ export const App = () => {
         ))}
       </div>
 
-    </div>
+    </Layout>
   )
 
 }
