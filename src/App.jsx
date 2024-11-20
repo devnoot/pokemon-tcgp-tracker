@@ -24,6 +24,10 @@ export const App = () => {
   const [cardPendingDeletion, setCardPendingDeletion] = useState(false)
 
   useEffect(() => {
+    if (search.trim() === '*') {
+      setResults(cards)
+      return
+    }
     if (search.length <3) {
       setResults([])
       return
@@ -65,7 +69,7 @@ export const App = () => {
         <input 
           id="card-search-field" 
           type="text" 
-          placeholder="Search by name, number, or card deck. Try: pikachu" 
+          placeholder="Search by name. Try: pikachu, or * to show all cards" 
           className="w-full text-lg ps-3 h-16 border rounded dark:bg-zinc-950 dark:text-white" 
           onChange={e => setSearch(e.target.value)} 
         />
@@ -98,13 +102,21 @@ export const App = () => {
         </div>}
       </div>
 
-      <div className="w-96 p-3 bg-red-400 text-white dark:bg-zinc-950 flex-1 overflow-y-auto">
-        <h2 className="text-2xl mb-2 font-bold">My Deck</h2>
-        {userCards.length === 0  ? <div>No cards collected yet!</div> : <div className={cn(['border', 'dark:border-zinc-600', 'p-2', 'rounded-md', 'flex', 'flex-col'])}>
-          <div>Charizard: {userCards.filter(c => c.Deck.toUpperCase() === CHARIZARD).length} / {NUM_CARDS_IN_CHARIZARD_DECK}</div>
-          <div>Mewtwo: {userCards.filter(c => c.Deck.toUpperCase() === MEWTWO).length} / {NUM_CARDS_IN_MEWTWO_DECK}</div>
-          <div>Pikachu: {userCards.filter(c => c.Deck.toUpperCase() === PIKACHU).length} / {NUM_CARDS_IN_PIKACHU_DECK}</div>
-        </div>}
+      <div className="bg-red-400 text-white dark:bg-zinc-950 flex-1 overflow-y-auto max-w-80">
+        <h2 className="text-2xl mb-2 font-bold px-5 pt-5">My Deck</h2>
+          <div>
+          {userCards.length === 0  
+            ? <div>No cards collected yet!</div> 
+            : <div className={cn(['fixed', 'bottom-0', 'w-80'])}>
+                <div className={cn(['flex', 'w-full', 'justify-center', 'space-x-2'])}>
+                <Badge label={`Charizard ${userCards.filter(c => c.Deck.toUpperCase() === CHARIZARD).length}/${NUM_CARDS_IN_CHARIZARD_DECK}`} />
+                <Badge label={`Mewtwo ${userCards.filter(c => c.Deck.toUpperCase() === MEWTWO).length}/${NUM_CARDS_IN_MEWTWO_DECK}`}/> 
+                <Badge label={`Pikachu ${userCards.filter(c => c.Deck.toUpperCase() === PIKACHU).length}/${NUM_CARDS_IN_PIKACHU_DECK}`}/> 
+              </div>
+          </div>}
+        </div>
+        
+        <div className={cn(['px-5'])}>
         {userCards.map((c, i) => (
           <div key={`uc${i}`} className={cn([
             'w-full', 'inline-flex', 'justify-between', 'py-1', 'px-1', 
@@ -124,6 +136,8 @@ export const App = () => {
             </button>
           </div>
         ))}
+        </div>
+        
       </div>
 
     </Layout>
