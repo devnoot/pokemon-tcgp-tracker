@@ -4,6 +4,6 @@ I wrote this app to help keep track of what cards I am missing in the [Pokemon T
 
 The card list currently has the Charizard, Mewtwo, Pikachu, and Promo A decks. I'll try to keep the deck list updated as more cards are releaed.
 
-<img src="https://github.com/devnoot/pokemon-tcgp-tracker/blob/master/public/app.png" height="600" />
+<img src="https://raw.githubusercontent.com/devnoot/pokemon-tcgp-tracker/refs/heads/main/public/app.png" height="600" />
 
 For issues, contributions, questions, etc. please use the [issues tab](https://github.com/devnoot/pokemon-tcgp-tracker/issues)
